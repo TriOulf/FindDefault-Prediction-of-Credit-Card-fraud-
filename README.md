@@ -4,9 +4,9 @@
 
 This project tackles the challenge of identifying fraudulent credit card transactions using machine learning. It leverages the creditcard.csv dataset, explores various algorithms, and employs AutoML for hyperparameter tuning. The final model is deployed as a pickle file for seamless integration into applications.
 
-**Data**
+**DataDescription:**
 
-Description: Contains anonymized creditcard transaction data with labeling for fraudulent or legitimate transactions. 
+Contains anonymized creditcard transaction data with labeling for fraudulent or legitimate transactions. 
 
 **Technologies:**
 
