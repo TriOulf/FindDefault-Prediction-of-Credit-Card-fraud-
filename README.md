@@ -5,6 +5,7 @@
 This project tackles the challenge of identifying fraudulent credit card transactions using machine learning. It leverages the creditcard.csv dataset, explores various algorithms, and employs AutoML for hyperparameter tuning. The final model is deployed as a pickle file for seamless integration into applications.
 
 **Data**
+
 Description: Contains anonymized creditcard transaction data with labeling for fraudulent or legitimate transactions. 
 
 **Technologies:**
@@ -20,6 +21,18 @@ lightgbm (LightGBM algorithm) (Optional)
 catboost (CatBoost algorithm) (Optional)
 pickle (model serialization)
 
+**requirements.txt file for the libraries used in code:**
+
+scikit-learn==1.2.2
+xgboost==1.7.6
+lightgbm==4.0.0
+catboost==1.2
+matplotlib==3.8.0
+seaborn==0.12.2
+numpy==1.24.4
+pandas==2.1.3
+
+
 **Workflow:**
 1. Data Loading and Preprocessing:
    Load the creditcard.csv dataset using pandas.
@@ -29,7 +42,7 @@ pickle (model serialization)
    Split the data into training, validation, and test sets for model evaluation.
    
 2. Model Selection and Evaluation:
-   Selecting algorithms (Logistic Regression, Random Forest, Decision Tree, SVM, KNN, Naive Bayes)
+   Selecting algorithms (Logistic Regression, Random Forest,  Gradient Boosting (XGBoost, LightGBM, CatBoost), Decision Tree, SVM, KNN, Naive Bayes)
    Tuning hyperparameters for each algorithm.
    Train models on the training set and evaluate their performance on the validation set using metrics like precision, recall, F1-score, or AUC-ROC.
    Choose the model with the best performance on the validation set.
